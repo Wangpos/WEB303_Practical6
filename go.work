@@ -1,0 +1,11 @@
+go 1.25.0
+
+use (
+	./api-gateway
+	./menu-service
+	./order-service
+	./student-cafe-protos
+	./tests/e2e
+	./tests/integration
+	./user-service
+)
