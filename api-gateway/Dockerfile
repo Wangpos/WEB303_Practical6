@@ -13,7 +13,7 @@ COPY api-gateway/ .
 # Build the gateway
 RUN CGO_ENABLED=0 GOOS=linux go build -o /api-gateway .
 
-FROM alpine:latest
+FROM alpine:3.23.3
 WORKDIR /
 COPY --from=builder /api-gateway /api-gateway
 EXPOSE 8080
